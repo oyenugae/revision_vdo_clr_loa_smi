@@ -9,11 +9,15 @@ class Main {
     Scanner scan = new Scanner(System.in);
     num = scan.nextInt();
     do{
+      if (num == -1){
+        System.out.println("That is the end of the multiplication timestable. I hope you check back someday");
+        return;
+      }
+
        System.out.println ("Timestable for " + num);
       for (int j = 1; j<=12; j++){
         result = multiply(num, j);
         if (j!=12){
-          
           System.out.print(num + "x" + j + " = " + result + " ");
 
         }
